@@ -68,8 +68,7 @@ export const Player: FC<PlayerProps> = ({
               }}
             >
               {online ? player_names?.[player] : player?.split('_')[0]}{' '}
-              {player?.split('_')[1]} can play!
-              {/* {player?.split('_')[0]} {player?.split('_')[1]} can play! */}
+              {online ? '' : player?.split('_')[1]} can play!
             </h1>
           )}
         </div>
